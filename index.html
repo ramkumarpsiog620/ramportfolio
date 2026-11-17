@@ -6,95 +6,86 @@
     <title>Welcome All</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-  
 </head>
 <body>
-    <div class="main">
+<div class="main">
+
+    <section class="hero">
     <div class="div1">
-
-        <img src="hero.jpeg" alt="heroimg" class="img1">
+        <img src="hero.jpeg" alt="Hero image" class="img1">
         <h1 class="name">RAM KUMAR</h1>
-        <br>
-      <div class="div11">
-          <span >some</span>
-          <span>some</span>
-          <span>some</span>
-      </div>
-
-    </div>
-   
-   <div class="div2">
-
-    <div class="div21">
-        <img src="journey.jpeg" alt="journeyimg" class="img2">
-
-        <h1 class="journey" onclick="openjourney(this)">JOURNEY</h1>
-
-        <div class="div212">
-          
-            <button type="button" style="background: none; border: none; font-size: 24px; cursor: pointer;" onclick="closejourney()">
-  &times;
-</button>
-    <fieldset class="step">
-        <legend>Schooling</legend>
-        <h3 >Sri Vidya Matric Hr. Sec. School</h3>
-        <p>Virudhunagar</p>
-        <p>10th - 473 Marks</p>
-        <p>12th - 550 Marks</p>
-    </fieldset>
-
-    <fieldset class="step">
-        <legend>Graduation</legend>
-        <h3>Sri Krishna College of Engineering and Technology</h3>
-        <p>Coimbatore</p>
-        <p>BE - Electronics and Communication Engineering</p>
-        <p>Percentage - 82%</p>
-    </fieldset>
-
-    <fieldset class="step">
-        <legend>Professional Career</legend>
-        <h3>Psiog Digital</h3>
-        <p>Chennai</p>
-        <p>Role - Impactor</p>
-        <p>Currently working</p>
-    </fieldset>
-
-
+        <div class="div11">
+            <span>some</span>
+            <span>some</span>
+            <span>some</span>
         </div>
     </div>
+    </section>
     
-    <div class="div22">
-        <h1 class="journey">INTRESTS</h1>
-        <img src="journey.jpeg" alt="journeyimg" class="img2">
-         
-        <div class="div221">
-            
+    <div class="div2">
+
+        <div class="div21">
+            <img src="journey.jpeg" alt="Journey" class="img2">
+            <h2 class="journey" onclick="openjourney()">JOURNEY</h2>
+
+            <div class="div212">
+                <button type="button" class="close-btn" aria-label="Close" onclick="closejourney()">&times;</button>
+
+                <fieldset class="step">
+                    <legend>Schooling</legend>
+                    <h3>Sri Vidya Matric Hr. Sec. School</h3>
+                    <p>Virudhunagar</p>
+                    <p>10th - 473 Marks</p>
+                    <p>12th - 550 Marks</p>
+                </fieldset>
+
+                <fieldset class="step">
+                    <legend>Graduation</legend>
+                    <h3>Sri Krishna College of Engineering and Technology</h3>
+                    <p>Coimbatore</p>
+                    <p>BE - Electronics and Communication Engineering</p>
+                    <p>Percentage - 82%</p>
+                </fieldset>
+
+                <fieldset class="step">
+                    <legend>Professional Career</legend>
+                    <h3>Psiog Digital</h3>
+                    <p>Chennai</p>
+                    <p>Role - Impactor</p>
+                    <p>Currently working</p>
+                </fieldset>
+            </div>
         </div>
+
+     <div class="div22">
+    <h2 class="intrest" onclick="openlikings()">INTERESTS</h2>
+    <img src="journey.jpeg" alt="Interests" class="img3">
+
+    <div class="div221">
+        <button type="button" class="close-btn" aria-label="Close" onclick="closelikings()">&times;</button>
+        <img src="walkingimage.avif" alt="Walking" class="likings">
+        <img src="listeningsongs.jpg" alt="Listening to songs" class="likings">
+        <img src="sports.jpeg" alt="Watching sports" class="likings">
+        <img src="food.jpeg" alt="Watching sports" class="likings">
+        <img src="photography.jpeg" alt="Watching sports" class="likings">
+        <img src="pets.jpeg" alt="Watching sports" class="likings">
     </div>
-
-    </div>
-
-
-    <div class="div3">
-
-    <div class="div31">
-        <img src="journey.jpeg" alt="journeyimg" class="img2">
-
-        <h1 class="journey">FAMILY</h1>
-    </div>
-    
-    <div class="div32">
-        <img src="journey.jpeg" alt="journeyimg" class="img2">
-        <h1 class="journey">HOBBIES</h1>
-    </div>
-    </div>
-
-
-
 </div>
 
+    </div>
 
-     
+    <div class="div3">
+        <div class="div31">
+            <img src="journey.jpeg" alt="Family" class="img2">
+            <h2 class="journey">FAMILY</h2>
+        </div>
 
+        <div class="div32">
+            <img src="journey.jpeg" alt="Hobbies" class="img2">
+            <h2 class="journey">HOBBIES</h2>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
