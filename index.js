@@ -112,6 +112,29 @@ likings.forEach((step) => {
     observer1.observe(step);
 });
 
+let hobby = document.querySelectorAll(".hobby");
+
+let observer2 = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+        else {
+            entry.target.classList.remove("show");
+        }
+
+    });
+
+}, {
+    threshold: 0.7
+});
+
+hobby.forEach((step) => {
+    observer2.observe(step);
+});
+
 const div321   = document.querySelector(".div321");
 const img5    = document.querySelector(".img5");
 const hobbies = document.querySelector(".hobbies");
@@ -120,7 +143,7 @@ const hobbies = document.querySelector(".hobbies");
 function openhobbies() {
     img5.style.display = "none";
     hobbies.style.display = "none";
-     div321.style.display = "block";
+     div321.style.display = "grid";
 
 }
 
