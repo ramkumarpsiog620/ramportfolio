@@ -21,11 +21,49 @@ window.addEventListener("scroll", () => {
 
 });
 
+let img2=document.querySelector(".img2");
+let journey=document.querySelector(".journey");
+let div212=document.querySelector(".div212");
+let div21=document.querySelector(".div21");
 function openjourney()
 {
-    let img2=document.querySelector(".img2");
-    let journey=document.querySelector(".journey");
 
     img2.style.display="none";
     journey.style.display="none";
+    div212.style.display="block";
+    div21.style.overflowY = "auto";
+    div21.style.scrollbarWidth = "none";
 }
+function closejourney()
+{
+
+
+    img2.style.display="block";
+    journey.style.display="block";
+    div212.style.display="none";
+     div21.style.overflowY = "hidden";
+
+}
+
+let steps = document.querySelectorAll(".step");
+
+let observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+        else {
+            entry.target.classList.remove("show");
+        }
+
+    });
+
+}, {
+    threshold: 0.7
+});
+
+steps.forEach((step) => {
+    observer.observe(step);
+});
