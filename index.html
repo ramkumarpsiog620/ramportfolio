@@ -10,7 +10,7 @@
 <body>
 <div class="main">
 
-    <section class="hero">
+
     <div class="div1">
         <img src="hero.jpeg" alt="Hero image" class="img1">
         <h1 class="name">RAM KUMAR</h1>
@@ -20,7 +20,7 @@
             <span>some</span>
         </div>
     </div>
-    </section>
+
     
     <div class="div2">
 
@@ -76,16 +76,26 @@
 
     <div class="div3">
         <div class="div31">
-            <img src="journey.jpeg" alt="Family" class="img2">
-            <h2 class="journey">FAMILY</h2>
+            <img src="journey.jpeg" alt="Family" class="img4">
+            <h2 class="family" onclick="openfamily()">FAMILY</h2>
+              <div class="div311">
+            <button type="button" class="close-btn" aria-label="Close" onclick="closefamily()">&times;
+            </button>
+         </div>
         </div>
 
         <div class="div32">
-            <img src="journey.jpeg" alt="Hobbies" class="img2">
-            <h2 class="journey">HOBBIES</h2>
+            <img src="journey.jpeg" alt="Hobbies" class="img5">
+            <h2 class="hobbies" onclick="openhobbies()">HOBBIES</h2>
+         <div class="div321">
+            <button type="button" class="close-btn" aria-label="Close" onclick="closehobbies()">&times;
+
+            </button>
+         </div>
         </div>
     </div>
 
+   
 </div>
 </body>
 </html>

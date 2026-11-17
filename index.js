@@ -70,9 +70,9 @@ steps.forEach((step) => {
 
 
 const div22   = document.querySelector(".div22");
-const img3    = div22.querySelector(".img3");
-const intrest = div22.querySelector(".intrest");
-const div221  = div22.querySelector(".div221");
+const img3    = document.querySelector(".img3");
+const intrest = document.querySelector(".intrest");
+const div221  = document.querySelector(".div221");
 
 function openlikings() {
     img3.style.display = "none";
@@ -111,4 +111,43 @@ let observer1 = new IntersectionObserver((entries) => {
 likings.forEach((step) => {
     observer1.observe(step);
 });
+
+const div321   = document.querySelector(".div321");
+const img5    = document.querySelector(".img5");
+const hobbies = document.querySelector(".hobbies");
+
+
+function openhobbies() {
+    img5.style.display = "none";
+    hobbies.style.display = "none";
+     div321.style.display = "block";
+
+}
+
+function closehobbies() {
+    img5.style.display = "block";
+    hobbies.style.display = "block";
+      div321.style.display = "none";
+    
+ 
+}
+const div311   = document.querySelector(".div311");
+const img4    = document.querySelector(".img4");
+const family = document.querySelector(".family");
+
+
+function openfamily() {
+    img4.style.display = "none";
+    family.style.display = "none";
+     div311.style.display = "block";
+
+}
+
+function closefamily() {
+    img4.style.display = "block";
+    family.style.display = "block";
+      div311.style.display = "none";
+    
+ 
+}
 

@@ -100,7 +100,7 @@
 
 
 .img2,
-.img3 {
+.img3,.img4,.img5 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -110,7 +110,7 @@
 
 
 .journey,
-.intrest {
+.intrest,.hobbies,.family {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,15 +124,15 @@
 }
 
 .div21:hover .img2,
-.div31:hover .img2,
-.div32:hover .img2,
+.div31:hover .img4,
+.div32:hover .img5,
 .div22:hover .img3 {
     opacity: 0.5;
 }
 
 .div21:hover .journey,
-.div31:hover .journey,
-.div32:hover .journey,
+.div31:hover .family,
+.div32:hover .hobbies,
 .div22:hover .intrest {
     opacity: 1;
 }
@@ -220,3 +220,12 @@ sub {
 
 .likings:nth-of-type(odd)  { align-self: start; } 
 .likings:nth-of-type(even) { align-self: end; }   
+
+.div321{
+    display: none;
+}
+.div311
+{
+    display: none;
+
+}
