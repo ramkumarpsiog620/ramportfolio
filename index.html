@@ -3,147 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome All</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="description" content="Ram Kumar - Impactor at Psiog Digital, Chennai. A personal profile covering my journey, interests, family and hobbies.">
+    <title>Ram Kumar | Impactor at Psiog Digital</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/features.js" defer></script>
 </head>
 <body>
-<div class="main">
 
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="div1">
-        <img src="hero.jpeg" alt="Hero image" class="img1">
-        <h1 class="name">RAM KUMAR</h1>
-        <div class="div11">
-            <span>IMPACTOR</span>
-            <span>PSIOG DIGITAL</span>
-            <span>CHENNAI</span>
-        </div>
-    </div>
+<header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+        <a class="nav-brand" href="#hero">RK</a>
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="is-active">Home</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#family">Family</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main" id="main">
 
     
+    <section class="div1" id="hero" aria-label="Introduction">
+        <img src="images/hero/hero.jpeg" alt="Office building glowing at dusk" class="img1" width="2400" height="1409" fetchpriority="high">
+        <div class="hero-content">
+            <div class="hero-avatar" aria-hidden="true">RK</div>
+            <h1 class="name">RAM KUMAR</h1>
+            <p class="div11">
+                <span>IMPACTOR</span>
+                <span>PSIOG DIGITAL</span>
+                <span>CHENNAI</span>
+            </p>
+            <a class="btn" href="#journey">Explore My Journey &rarr;</a>
+        </div>
+    </section>
+
+    <!-- ===== JOURNEY + INTERESTS ===== -->
     <div class="div2">
 
-        <div class="div21">
-            <img src="journey.jpeg" alt="Journey" class="img2">
-            <h2 class="journey" onclick="openjourney()">JOURNEY</h2>
+        <section class="div21" id="journey" aria-label="Professional journey">
+            <img src="images/journey/journey.jpeg" alt="Climbing the steps of a career" class="img2" width="620" height="350">
+            <h2 class="journey" onclick="openjourney()" role="button" tabindex="0">JOURNEY</h2>
 
             <div class="div212">
                 <button type="button" class="close-btn" aria-label="Close" onclick="closejourney()">&times;</button>
+                <h3 class="panel-title">My Journey</h3>
 
-                <fieldset class="step">
-                    <legend>Schooling</legend>
-                    <h3>Sri Vidya Matric Hr. Sec. School</h3>
-                    <p>Virudhunagar</p>
-                    <p>10th - 473 Marks</p>
-                    <p>12th - 550 Marks</p>
-                </fieldset>
+                <div class="timeline">
+                    <article class="step">
+                        <span class="step-icon" aria-hidden="true">&#127979;</span>
+                        <p class="step-period">Schooling</p>
+                        <h4 class="step-title">Sri Vidya Matric Hr. Sec. School</h4>
+                        <p class="step-place">Virudhunagar</p>
+                        <div class="step-more">
+                            <p>10th - 473 Marks</p>
+                            <p>12th - 550 Marks</p>
+                        </div>
+                        <button type="button" class="step-toggle" aria-expanded="false">Show more</button>
+                    </article>
 
-                <fieldset class="step">
-                    <legend>Graduation</legend>
-                    <h3>Sri Krishna College of Engineering and Technology</h3>
-                    <p>Coimbatore</p>
-                    <p>BE - Electronics and Communication Engineering</p>
-                    <p>Percentage - 82%</p>
-                </fieldset>
+                    <article class="step">
+                        <span class="step-icon" aria-hidden="true">&#127891;</span>
+                        <p class="step-period">Graduation</p>
+                        <h4 class="step-title">Sri Krishna College of Engineering and Technology</h4>
+                        <p class="step-place">Coimbatore</p>
+                        <div class="step-more">
+                            <p>BE - Electronics and Communication Engineering</p>
+                            <p>Percentage - 82%</p>
+                        </div>
+                        <button type="button" class="step-toggle" aria-expanded="false">Show more</button>
+                    </article>
 
-                <fieldset class="step">
-                    <legend>Professional Career</legend>
-                    <h3>Psiog Digital</h3>
-                    <p>Chennai</p>
-                    <p>Role - Impactor</p>
-                    <p>Currently working</p>
-                </fieldset>
+                    <article class="step">
+                        <span class="step-icon" aria-hidden="true">&#128188;</span>
+                        <p class="step-period">Professional Career</p>
+                        <h4 class="step-title">Psiog Digital</h4>
+                        <p class="step-place">Chennai</p>
+                        <div class="step-more">
+                            <p>Role - Impactor</p>
+                            <p>Currently working</p>
+                        </div>
+                        <button type="button" class="step-toggle" aria-expanded="false">Show more</button>
+                    </article>
+                </div>
             </div>
-        </div>
+        </section>
 
-     <div class="div22">
-    <h2 class="intrest" onclick="openlikings()">INTERESTS</h2>
-    <img src="journey.jpeg" alt="Interests" class="img3">
+        <section class="div22" id="interests" aria-label="Personal likings">
+            <h2 class="intrest" onclick="openlikings()" role="button" tabindex="0">INTERESTS</h2>
+            <img src="images/journey/journey.jpeg" alt="Things I enjoy" class="img3" width="620" height="350">
 
-    <div class="div221">
-        <button type="button" class="close-btn" aria-label="Close" onclick="closelikings()">&times;</button>
-      <div class="likings">
-    <img src="walkingimage.avif" alt="Walking">
-    <span class="likings-text">Rather than focusing solely on external political demands, 
-        peace walks often emphasize that lasting change begins with inner calm</span>
-</div>
-<div class="likings">
-    <img src="listeningsongs.jpg" alt="Listening to songs">
-    <span class="likings-text">Rather than filling the silence with noise, music gives our feelings a voice 
-        and lets the heart say what words cannot.</span>
-</div>
-<div class="likings">
-    <img src="sports.jpeg" alt="Watching sports">
-    <span class="likings-text">Rather than being only about winning, a game shows how effort, 
-        teamwork and never giving up can bring strangers together.</span>
-</div>
-<div class="likings">
-    <img src="food.jpeg" alt="Food">
-    <span class="likings-text">Rather than just satisfying hunger, a shared meal becomes
-         a small celebration of culture, care and togetherness.</span>
-</div>
-<div class="likings">
-    <img src="photography.jpeg" alt="Photography">
-    <span class="likings-text">Rather than collecting pictures, photography trains the
-         eye to notice the quiet beauty hiding in ordinary moments.</span>
-</div>
-<div class="likings">
-    <img src="pets.jpeg" alt="Pets">
-    <span class="likings-text">Rather than asking for anything in return, pets offer unconditional love
-         and remind us that happiness can be simple.</span>
-</div>
+            <div class="div221">
+                <button type="button" class="close-btn" aria-label="Close" onclick="closelikings()">&times;</button>
+
+                <article class="likings" tabindex="0" role="button" aria-label="Peace walks - open larger view">
+                    <img src="images/interests/walkingimage.avif" alt="Walking" width="740" height="492" loading="lazy">
+                    <h3 class="likings-title card-title">Peace Walks</h3>
+                    <span class="likings-text card-text">Rather than focusing solely on external political demands,
+                        peace walks often emphasize that lasting change begins with inner calm</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Music - open larger view">
+                    <img src="images/interests/listeningsongs.jpg" alt="Listening to songs" width="500" height="500" loading="lazy">
+                    <h3 class="likings-title card-title">Music</h3>
+                    <span class="likings-text card-text">Rather than filling the silence with noise, music gives our feelings a voice
+                        and lets the heart say what words cannot.</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Sports - open larger view">
+                    <img src="images/interests/sports.jpeg" alt="Watching sports" width="547" height="365" loading="lazy">
+                    <h3 class="likings-title card-title">Sports</h3>
+                    <span class="likings-text card-text">Rather than being only about winning, a game shows how effort,
+                        teamwork and never giving up can bring strangers together.</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Food - open larger view">
+                    <img src="images/interests/food.jpeg" alt="Food" width="738" height="414" loading="lazy">
+                    <h3 class="likings-title card-title">Food</h3>
+                    <span class="likings-text card-text">Rather than just satisfying hunger, a shared meal becomes
+                        a small celebration of culture, care and togetherness.</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Photography - open larger view">
+                    <img src="images/interests/photography.jpeg" alt="Photography" width="597" height="335" loading="lazy">
+                    <h3 class="likings-title card-title">Photography</h3>
+                    <span class="likings-text card-text">Rather than collecting pictures, photography trains the
+                        eye to notice the quiet beauty hiding in ordinary moments.</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Pets - open larger view">
+                    <img src="images/interests/pets.jpeg" alt="Pets" width="640" height="480" loading="lazy">
+                    <h3 class="likings-title card-title">Pets</h3>
+                    <span class="likings-text card-text">Rather than asking for anything in return, pets offer unconditional love
+                        and remind us that happiness can be simple.</span>
+                </article>
+                <article class="likings" tabindex="0" role="button" aria-label="Movies and series - open larger view">
+                    <img src="images/interests/movies.jpeg" alt="Movies and series" width="678" height="452" loading="lazy">
+                    <h3 class="likings-title card-title">Movies &amp; Series</h3>
+                    <span class="likings-text card-text">Rather than just passing time, a great story on screen teaches us
+                        to feel, to laugh and to see the world through someone else's eyes.</span>
+                </article>
+                <article class="likings likings-icon" tabindex="0" role="button" aria-label="Books - open larger view">
+                    <div class="likings-art" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="likings-title card-title">Books</h3>
+                    <span class="likings-text card-text">Rather than just turning pages, a good book lets us borrow
+                        someone else's wisdom and grow a little with every chapter.</span>
+                </article>
+                <article class="likings likings-icon" tabindex="0" role="button" aria-label="Travel - open larger view">
+                    <div class="likings-art" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="likings-title card-title">Travel</h3>
+                    <span class="likings-text card-text">Rather than only reaching a destination, travel shows us how big
+                        the world is and how kind strangers can be.</span>
+                </article>
+            </div>
+        </section>
+
     </div>
-</div>
 
-    </div>
-
+    <!-- ===== FAMILY + HOBBIES ===== -->
     <div class="div3">
-        <div class="div31">
-            <img src="journey.jpeg" alt="Family" class="img4">
-            <h2 class="family" onclick="openfamily()">FAMILY</h2>
-              <div class="div311">
-            <button type="button" class="close-btn" aria-label="Close" onclick="closefamily()">&times;
-            </button>
-         </div>
-        </div>
 
-        <div class="div32">
-            <img src="journey.jpeg" alt="Hobbies" class="img5">
-            <h2 class="hobbies" onclick="openhobbies()">HOBBIES</h2>
-         <div class="div321">
-            <button type="button" class="close-btn" aria-label="Close" onclick="closehobbies()">&times;
-            </button>
-            <div class="hobby">
-    <img src="playing.webp" alt="Playing cricket">
-    <span class="hobby-text">Rather than just a game, cricket teaches patience, teamwork and how to stay calm under pressure.</span>
-</div>
-<div class="hobby">
-    <img src="movies.jpeg" alt="Watching movies">
-    <span class="hobby-text">Rather than only entertainment, a good movie lets us live another life for a few hours.</span>
-</div>
-<div class="hobby">
-    <img src="cooking.jpg" alt="Cooking">
-    <span class="hobby-text">Rather than a daily chore, cooking turns simple ingredients into care you can taste.</span>
-</div>
-         </div>
-        </div>
+        <section class="div31" id="family" aria-label="Family">
+            <img src="images/journey/journey.jpeg" alt="Family" class="img4" width="620" height="350">
+            <h2 class="family" onclick="openfamily()" role="button" tabindex="0">FAMILY</h2>
+
+            <div class="div311">
+                <button type="button" class="close-btn" aria-label="Close" onclick="closefamily()">&times;</button>
+                <img src="images/family/family-banner.svg" alt="Family group photo placeholder" class="family-banner" width="800" height="260">
+                <h3 class="panel-title">My Family</h3>
+
+                <div class="family-grid">
+                    <article class="flip-card" tabindex="0" role="button" aria-label="My Mother - flip card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="images/family/silhouette.svg" alt="Placeholder portrait for my mother" width="200" height="200" loading="lazy">
+                                <p class="flip-label">My Mother</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>The heart of our home - her love is the first thing I learned and the last thing I forget.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card" tabindex="0" role="button" aria-label="My Father - flip card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="images/family/silhouette.svg" alt="Placeholder portrait for my father" width="200" height="200" loading="lazy">
+                                <p class="flip-label">My Father</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>My first teacher in hard work, patience and quietly doing the right thing.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card" tabindex="0" role="button" aria-label="My Siblings - flip card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="images/family/silhouette.svg" alt="Placeholder portrait for my siblings" width="200" height="200" loading="lazy">
+                                <p class="flip-label">My Siblings</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Partners in every childhood adventure and every argument worth remembering.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flip-card" tabindex="0" role="button" aria-label="My Grandparents - flip card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="images/family/silhouette.svg" alt="Placeholder portrait for my grandparents" width="200" height="200" loading="lazy">
+                                <p class="flip-label">My Grandparents</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Roots that keep me grounded, with stories that make every festival feel warmer.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="div32" id="hobbies" aria-label="Hobbies and passions">
+            <img src="images/journey/journey.jpeg" alt="Hobbies" class="img5" width="620" height="350">
+            <h2 class="hobbies" onclick="openhobbies()" role="button" tabindex="0">HOBBIES</h2>
+
+            <div class="div321">
+                <button type="button" class="close-btn" aria-label="Close" onclick="closehobbies()">&times;</button>
+                <article class="hobby" tabindex="0" role="button" aria-label="Cricket - open larger view">
+                    <img src="images/hobbies/playing.webp" alt="Playing cricket" width="800" height="534" loading="lazy">
+                    <h3 class="hobby-title card-title">Cricket</h3>
+                    <span class="hobby-text card-text">Rather than just a game, cricket teaches patience, teamwork and how to stay calm under pressure.</span>
+                </article>
+                <article class="hobby" tabindex="0" role="button" aria-label="Movies - open larger view">
+                    <img src="images/hobbies/movies.jpeg" alt="Watching movies" width="678" height="452" loading="lazy">
+                    <h3 class="hobby-title card-title">Movies</h3>
+                    <span class="hobby-text card-text">Rather than only entertainment, a good movie lets us live another life for a few hours.</span>
+                </article>
+                <article class="hobby" tabindex="0" role="button" aria-label="Cooking - open larger view">
+                    <img src="images/hobbies/cooking.jpg" alt="Cooking" width="1300" height="866" loading="lazy">
+                    <h3 class="hobby-title card-title">Cooking</h3>
+                    <span class="hobby-text card-text">Rather than a daily chore, cooking turns simple ingredients into care you can taste.</span>
+                </article>
+            </div>
+        </section>
+
     </div>
-<footer class="footer">
-    <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+</main>
 
-    <a href="https://github.com/Ram-kumar-l" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+    <h2 class="footer-title">Let&rsquo;s connect</h2>
+    <div class="footer-social">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/Ram-kumar-l" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:your-email@example.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+    </div>
+    <p class="footer-credit">Built with HTML, CSS &amp; JS | Deployed via GitHub Actions</p>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Ram Kumar. All rights reserved.</p>
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
 </footer>
-   
-</div>
+
 </body>
 </html>

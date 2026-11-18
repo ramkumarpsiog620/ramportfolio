@@ -1,0 +1,66 @@
+
+:root {
+  /* Primary Colors */
+  --color-primary: #2c3e50;
+  --color-primary-light: #3498db;
+  --color-primary-dark: #1a252f;
+
+  /* Background Colors */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-card: #ffffff;
+
+  /* Text Colors */
+  --color-text: #2c3e50;
+  --color-text-secondary: #6c757d;
+  --color-text-inverse: #ffffff;
+
+  /* Accent & Borders */
+  --color-accent: #e74c3c;
+  --color-border: #dee2e6;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Georgia', serif;
+  --font-size-base: 16px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-display: 4.5rem;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+  --transition-speed: 0.3s;
+
+  /* Extended: backgrounds, glow & overlays (used by style.css) */
+  --color-shadow-strong: rgba(0, 0, 0, 0.28);
+  --gradient-start: #eecda3;
+  --gradient-end: #ef629f;
+  --color-glow: rgba(255, 255, 255, 0.45);
+  --color-glow-accent: rgba(231, 76, 60, 0.22);
+  --color-dots: rgba(255, 255, 255, 0.55);
+  --color-on-gradient: #1a252f;
+  --color-on-overlay: #ffffff;
+  --color-overlay: rgba(26, 37, 47, 0.55);
+  --color-overlay-strong: rgba(26, 37, 47, 0.88);
+  --color-nav-bg: rgba(26, 37, 47, 0.82);
+  --color-hero-text: #e6eaee;
+  --color-hero-scrim: rgba(26, 37, 47, 0.55);
+
+  /* Family section warm sub-palette (scoped to #family in style.css) */
+  --family-bg: #fff4e6;
+  --family-card: #ffe8cc;
+  --family-text: #5f370e;
+  --family-text-secondary: #7c4a1a;
+  --family-accent: #c2410c;
+  --family-border: #f5cfa0;
+  --family-on-accent: #ffffff;
+}
