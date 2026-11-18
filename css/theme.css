@@ -1,25 +1,21 @@
 :root {
-  /* Primary Colors */
+
   --color-primary: #16324f;
   --color-primary-light: #2a7fba;
   --color-primary-dark: #0b1b2b;
 
-  /* Background Colors */
   --color-bg: #f5f7fa;
   --color-bg-secondary: #eef2f7;
   --color-bg-card: #ffffff;
 
-  /* Text Colors */
   --color-text: #1b2a3a;
   --color-text-secondary: #5b6b7c;
   --color-text-inverse: #ffffff;
 
-  /* Accent & Borders */
   --color-accent: #0b7f8c;
   --color-border: #d9e1ea;
   --color-shadow: rgba(11, 27, 43, 0.12);
 
-  /* Typography */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-heading: 'Georgia', serif;
   --font-size-base: 16px;
@@ -27,19 +23,16 @@
   --font-size-h2: 2rem;
   --font-size-display: 4.5rem;
 
-  /* Spacing */
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
 
-  /* Layout */
   --max-width: 1200px;
   --border-radius: 8px;
   --border-radius-lg: 16px;
   --transition-speed: 0.3s;
 
-  /* Extended: backgrounds, glow & overlays */
   --color-shadow-strong: rgba(5, 14, 24, 0.4);
   --gradient-start: #0b1b2b;
   --gradient-end: #1f6f8b;
@@ -54,7 +47,6 @@
   --color-hero-text: #f1f5f9;
   --color-hero-scrim: rgba(11, 27, 43, 0.6);
 
-  /* Family section warm sub-palette */
   --family-bg: #fbf3e7;
   --family-card: #f6e6cf;
   --family-text: #4a2e12;
