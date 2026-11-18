@@ -1,3 +1,4 @@
+
 name: Validate HTML & CSS
 
 on:
@@ -9,6 +10,7 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,10 +23,53 @@ jobs:
       - name: Install validation tools
         run: |
           npm install -g htmlhint
-          npm install -g csslint
+          npm install --no-save postcss
 
       - name: Validate HTML files
         run: htmlhint "*.html" --config .htmlhintrc
 
       - name: Validate CSS files
-        run: csslint css/*.css --quiet
+        run: |
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+          const postcss = require("postcss");
+
+          const dir = "css";
+
+          if (!fs.existsSync(dir)) {
+            console.error("CSS folder not found!");
+            process.exit(1);
+          }
+
+          const files = fs.readdirSync(dir)
+            .filter(file => file.endsWith(".css"));
+
+          if (files.length === 0) {
+            console.error("No CSS files found!");
+            process.exit(1);
+          }
+
+          let failed = false;
+
+          for (const file of files) {
+            try {
+              const content = fs.readFileSync(
+                path.join(dir, file), "utf8"
+              );
+
+              postcss.parse(content, { from: file });
+              console.log(`PASS: ${file}`);
+            } catch (error) {
+              failed = true;
+              console.error(
+                `ERROR: ${file}:${error.line}:${error.column}`
+              );
+              console.error(error.reason);
+            }
+          }
+
+          if (failed) process.exit(1);
+
+          console.log("All CSS files passed syntax validation!");
+          '
