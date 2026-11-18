@@ -1297,3 +1297,102 @@ button:focus-visible,
 .lightbox-img[hidden] {
     display: none;
 }
+
+/* =====================================================
+   BACKGROUND ENHANCEMENTS (append at end of style.css)
+   ===================================================== */
+
+/* Page background */
+body {
+    background: linear-gradient(180deg, #f5f7fa 0%, #e6ecf3 100%);
+}
+
+/* ---------- Hero: richer scrim so text stays readable on any photo ---------- */
+.div1 {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+}
+
+.div1::after {
+    background:
+        linear-gradient(to right, rgba(11, 27, 43, 0) 20%, rgba(11, 27, 43, 0.8) 100%),
+        linear-gradient(to top, rgba(11, 27, 43, 0.75) 0%, transparent 45%),
+        linear-gradient(135deg, rgba(11, 127, 140, 0.22) 0%, transparent 55%);
+}
+
+/* ---------- Journey/Interests and Family/Hobbies backgrounds ---------- */
+.div2 {
+    background:
+        radial-gradient(circle at 12% 18%, rgba(125, 211, 252, 0.20) 0, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(11, 127, 140, 0.40) 0, transparent 45%),
+        linear-gradient(135deg, #0b1b2b 0%, #123a57 55%, #1f6f8b 100%);
+}
+
+.div3 {
+    background:
+        radial-gradient(circle at 88% 15%, rgba(244, 196, 120, 0.18) 0, transparent 38%),
+        radial-gradient(circle at 10% 90%, rgba(11, 127, 140, 0.35) 0, transparent 45%),
+        linear-gradient(315deg, #0b1b2b 0%, #16324f 55%, #2a7fba 100%);
+}
+
+/* OPTIONAL: real photo behind the gradient.
+   Put an image at images/backgrounds/section-bg.jpg, then uncomment:
+
+.div2,
+.div3 {
+    background-image:
+        linear-gradient(135deg, rgba(11, 27, 43, 0.88), rgba(31, 111, 139, 0.78)),
+        url("../images/backgrounds/section-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+/* ---------- Panel cover images: consistent, professional tints ---------- */
+.img2 { filter: saturate(0.95) brightness(0.95); }
+.img3 { filter: hue-rotate(20deg) saturate(0.9) brightness(0.95); }
+.img4 { filter: sepia(0.45) saturate(1.2) hue-rotate(-10deg) brightness(0.98); }
+.img5 { filter: hue-rotate(60deg) saturate(0.9) brightness(0.95); }
+
+/* Softer panel glow on hover, matching the new accent */
+.div21:hover,
+.div22:hover,
+.div31:hover,
+.div32:hover {
+    box-shadow: 0 30px 60px var(--color-shadow-strong), 0 0 0 2px var(--color-accent);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background:
+        radial-gradient(circle at 15% 0, rgba(125, 211, 252, 0.18) 0, transparent 40%),
+        radial-gradient(circle at 90% 100%, rgba(11, 127, 140, 0.35) 0, transparent 45%),
+        linear-gradient(135deg, #0b1b2b 0%, #16324f 60%, #1f6f8b 100%);
+    border-top: 3px solid var(--color-accent);
+}
+
+/* ---------- Mobile: keep the hero scrim flat and readable ---------- */
+@media (max-width: 768px) {
+    .div1::after {
+        background: linear-gradient(rgba(11, 27, 43, 0.65), rgba(11, 27, 43, 0.78));
+    }
+}
+
+.theme-toggle {
+    margin-left: var(--spacing-md);
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+[data-theme="dark"] {
+    --color-bg: #0a121c;
+    --color-bg-secondary: #15233a;
+    --color-bg-card: #101c2b;
+    --color-text: #e6edf5;
+    --color-text-secondary: #9fb0c3;
+    --color-primary: #8fcdf0;
+    --color-border: #25374c;
+}

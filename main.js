@@ -424,3 +424,18 @@ function closefamily() {
         });
     }
 })();
+
+const themeBtn = document.getElementById("theme-toggle");
+
+function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    themeBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+    localStorage.setItem("theme", theme);
+}
+
+setTheme(localStorage.getItem("theme") || "light");
+
+themeBtn.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    setTheme(current === "dark" ? "light" : "dark");
+});

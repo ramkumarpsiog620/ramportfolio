@@ -1,24 +1,23 @@
-
 :root {
   /* Primary Colors */
-  --color-primary: #2c3e50;
-  --color-primary-light: #3498db;
-  --color-primary-dark: #1a252f;
+  --color-primary: #16324f;
+  --color-primary-light: #2a7fba;
+  --color-primary-dark: #0b1b2b;
 
   /* Background Colors */
-  --color-bg: #ffffff;
-  --color-bg-secondary: #f8f9fa;
+  --color-bg: #f5f7fa;
+  --color-bg-secondary: #eef2f7;
   --color-bg-card: #ffffff;
 
   /* Text Colors */
-  --color-text: #2c3e50;
-  --color-text-secondary: #6c757d;
+  --color-text: #1b2a3a;
+  --color-text-secondary: #5b6b7c;
   --color-text-inverse: #ffffff;
 
   /* Accent & Borders */
-  --color-accent: #e74c3c;
-  --color-border: #dee2e6;
-  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-accent: #0b7f8c;
+  --color-border: #d9e1ea;
+  --color-shadow: rgba(11, 27, 43, 0.12);
 
   /* Typography */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,27 +39,27 @@
   --border-radius-lg: 16px;
   --transition-speed: 0.3s;
 
-  /* Extended: backgrounds, glow & overlays (used by style.css) */
-  --color-shadow-strong: rgba(0, 0, 0, 0.28);
-  --gradient-start: #eecda3;
-  --gradient-end: #ef629f;
-  --color-glow: rgba(255, 255, 255, 0.45);
-  --color-glow-accent: rgba(231, 76, 60, 0.22);
-  --color-dots: rgba(255, 255, 255, 0.55);
-  --color-on-gradient: #1a252f;
+  /* Extended: backgrounds, glow & overlays */
+  --color-shadow-strong: rgba(5, 14, 24, 0.4);
+  --gradient-start: #0b1b2b;
+  --gradient-end: #1f6f8b;
+  --color-glow: rgba(125, 211, 252, 0.16);
+  --color-glow-accent: rgba(11, 127, 140, 0.35);
+  --color-dots: rgba(255, 255, 255, 0.10);
+  --color-on-gradient: #ffffff;
   --color-on-overlay: #ffffff;
-  --color-overlay: rgba(26, 37, 47, 0.55);
-  --color-overlay-strong: rgba(26, 37, 47, 0.88);
-  --color-nav-bg: rgba(26, 37, 47, 0.82);
-  --color-hero-text: #e6eaee;
-  --color-hero-scrim: rgba(26, 37, 47, 0.55);
+  --color-overlay: rgba(11, 27, 43, 0.6);
+  --color-overlay-strong: rgba(11, 27, 43, 0.88);
+  --color-nav-bg: rgba(11, 27, 43, 0.85);
+  --color-hero-text: #f1f5f9;
+  --color-hero-scrim: rgba(11, 27, 43, 0.6);
 
-  /* Family section warm sub-palette (scoped to #family in style.css) */
-  --family-bg: #fff4e6;
-  --family-card: #ffe8cc;
-  --family-text: #5f370e;
-  --family-text-secondary: #7c4a1a;
-  --family-accent: #c2410c;
-  --family-border: #f5cfa0;
+  /* Family section warm sub-palette */
+  --family-bg: #fbf3e7;
+  --family-card: #f6e6cf;
+  --family-text: #4a2e12;
+  --family-text-secondary: #6e4421;
+  --family-accent: #a8480f;
+  --family-border: #ecd2aa;
   --family-on-accent: #ffffff;
 }
