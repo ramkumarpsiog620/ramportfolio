@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260" role="img" aria-label="Placeholder for a family group photo">
+  <g fill="#888888" fill-opacity="0.5">
+    <circle cx="190" cy="92" r="26"/><path d="M142 200c0-34 21-56 48-56s48 22 48 56z"/>
+    <circle cx="300" cy="78" r="30"/><path d="M246 200c0-40 24-64 54-64s54 24 54 64z"/>
+    <circle cx="410" cy="66" r="34"/><path d="M350 200c0-46 27-72 60-72s60 26 60 72z"/>
+    <circle cx="520" cy="80" r="30"/><path d="M466 200c0-40 24-64 54-64s54 24 54 64z"/>
+    <circle cx="624" cy="106" r="22"/><path d="M584 200c0-30 18-50 40-50s40 20 40 50z"/>
+  </g>
+  <text x="400" y="238" text-anchor="middle" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" fill="#888888">Replace with your family group photo</text>
+</svg>
