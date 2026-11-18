@@ -155,12 +155,7 @@ function closefamily() {
     family.style.display = "block";
     div311.style.display = "none";
 }
-/* ==========================================================================
-   features.js - extra interactions required by the use-case document.
-   js/main.js (the original scroll-fade, panel open/close and
-   IntersectionObserver code) is left exactly as written; this file only ADDS.
-   Vanilla JavaScript, no libraries.
-   ========================================================================== */
+
 (function () {
     "use strict";
 
@@ -197,12 +192,7 @@ function closefamily() {
         });
     }
 
-    /* ---------- 3. Smooth scrolling for anchor links ----------
-       The page is a stack of 100vh layers (hero -> journey/interests ->
-       family/hobbies) that stick and fade over each other, so a plain
-       #anchor jump can land in the wrong place. Each target is mapped to the
-       scroll position of the layer it lives in. Without JS the normal
-       #anchor links still work. */
+
     var hero = $(".div1");
 
     function layerHeight() {
@@ -255,7 +245,7 @@ function closefamily() {
         });
     });
 
-    /* highlight the nav link that matches the layer currently on screen */
+
     function layerIndex() {
         var unit = layerHeight();
         var y = window.scrollY;
@@ -289,7 +279,7 @@ function closefamily() {
         }
     });
 
-    /* ---------- 4. Keyboard support for the clickable panel headings ---------- */
+ 
     $all('[role="button"]').forEach(function (el) {
         el.addEventListener("keydown", function (event) {
             if (event.key === "Enter" || event.key === " ") {
@@ -299,7 +289,7 @@ function closefamily() {
         });
     });
 
-    /* ---------- 5. Journey timeline: "Show more" toggle ---------- */
+
     $all(".step-toggle").forEach(function (button) {
         button.addEventListener("click", function () {
             var step = button.closest(".step");
@@ -310,7 +300,6 @@ function closefamily() {
         });
     });
 
-    /* ---------- 6. Family: flip cards (tap / Enter / Space; hover is CSS) ---------- */
     $all(".flip-card").forEach(function (card) {
         card.addEventListener("click", function () {
             card.classList.toggle("is-flipped");
@@ -323,7 +312,7 @@ function closefamily() {
         });
     });
 
-    /* ---------- 7. Lightbox / modal for interest + hobby cards ---------- */
+   
     var lightbox = document.createElement("div");
     lightbox.className = "lightbox";
     lightbox.setAttribute("role", "dialog");
@@ -415,7 +404,7 @@ function closefamily() {
         }
     });
 
-    /* ---------- 8. Back-to-top button (footer) ---------- */
+  
     var backToTop = $("#back-to-top");
     if (backToTop) {
         backToTop.addEventListener("click", function () {
