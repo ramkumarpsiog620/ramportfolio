@@ -1,20 +1,31 @@
+
 name: Lighthouse Audit
 
 on:
   workflow_run:
     workflows: ["Deploy to GitHub Pages"]
     types: [completed]
+    branches: [developer]
+
   schedule:
     - cron: '0 9 * * 1'
+
+  workflow_dispatch:
 
 jobs:
   audit:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'schedule' || github.event.workflow_run.conclusion == 'success' }}
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Run Lighthouse
+    if: >
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Lighthouse Audit
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
